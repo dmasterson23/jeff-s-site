@@ -664,14 +664,34 @@ box-sizing: border-box;
   padding-bottom: 1em;
 }
 /*Media Queries*/
-@media screen and ((min-width):320px and (max-width)700px){
+@media screen and (min-width:300px) and (max-width:500px){
  
+
+  .services-title {
+    font-size: 2.3em;
+  }
+  .offering-content{
+    font-size: 2.5em;
+    padding: none;
+    box-shadow: none}
+
   .inner-container h3{
     font-size: 2em;
   }
- 
+ .footer-logo {
+  position: fixed;
+  padding: 2em;
+
+}
+
+ #icons-heading{
+   padding: 2em 0 2em 0;
+    align-content: center; 
+ }
   .footer-container{
-    padding: 0;
+    position: relative;
+    display: block;
+    justify-items: center;
   }
 
   .party-text,
@@ -681,7 +701,7 @@ box-sizing: border-box;
   }
 
 .wedding-text{
-  left: 47%;
+  left: 43%;
 }
 
 .home-heading {
@@ -691,6 +711,12 @@ box-sizing: border-box;
   color: #b94a4b;
 
 }
+
+.company-info,
+.contact{
+git
+  display: block;
+
 }
 
 @media screen and (min-width:725px){
