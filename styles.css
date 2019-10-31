@@ -682,7 +682,7 @@ box-sizing: border-box;
     font-size: 2em;
   }
  .footer-logo {
-  position: fixed;
+   /* position: fixed;  */
   padding: 2em;
 
 }
@@ -712,12 +712,6 @@ box-sizing: border-box;
   color: #b94a4b;
 
 }
-
-.company-info,
-.contact 
-
-{
-  display: block;
 
 }
 
@@ -807,9 +801,9 @@ box-sizing: border-box;
     }
 
     .footer-logo{
-      display: flex;
+       display: flex; 
     }
-  
+
     .footer-container{ 
       background-color: #b94a4b;
       display:grid;
