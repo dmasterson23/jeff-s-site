@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
   crossorigin="anonymous">
 </head>
@@ -56,7 +57,7 @@
 
 
   <header id="hero-image" class="grid"> 
-  <div class="contact-image">
+   <!-- <div class="contact-image">  -->
       <div class="inner-container">
           <h3 class = 'hero-text'>
             Master Sounds Entertainment</h3>
@@ -64,9 +65,7 @@
          </div>
    </header> 
 
-   <div class="home-testimonial">
-      <p> "This DJ cared about one thing --> to make our day as fun, relaxing, and as memorable as possible. And that's exactly what he achieved. We never worried for a second about timing or what was coming next".</p>
-    </div>
+ 
 
 
 
@@ -81,9 +80,11 @@
 
  <!---Main Aere-->
   <div class="contact-info"> 
+    <div id="hire-me"> 
+
       <h1 class="contact-heading">Contact Us</h1>
     <p>
-      Master Sounds Entertainment would love to host your next event. Please fill out the form describing your events below and we will get back to you as soon as we can!
+      We would love to provide DJ your next event in the Atlanta are. Please fill out the form below and we will get back to you as soon as we can!
     </p>
  </div>
       
@@ -92,7 +93,9 @@
            <div class="wrapper">        
    <!--Section 2-->
    <form name="contact" method="POST" data-netlify="true">
+     
        <div class="contact">
+
         
 
               <p class="full">
@@ -100,25 +103,13 @@
                    <input type="name" name="name" required id="full-name"  > 
                </p>
                <p class="email-full">                     
-
                    <label> Email</label>
-                   <input type="email" name="email" required id="email">
-                   
+                   <input type="email" name="email" required id="email">   
                </p> 
-                <p class="full">
-                   <label>Phone </label>
-                   <input type="tel" name="number" id="phone">
-               </p>  
                
-               <p class="full">
-                  <label>Event Type</label>
-                  <input  type="text" name="event-name" id="event"> 
-              </p>
-
-                <p class="date-event">   
-             <div class="date-event">
-                   <label>Date of Event </label>
-                    <select name="month" class="month-select" placeholder="Month">
+              
+                   <!-- <label>Date of Event </label> -->
+                    <!-- <select name="month" class="month-select" placeholder="Month">
                         <div>
                         <option value="blnk"> 
                         <option value="Jan">January</option>
@@ -172,7 +163,7 @@
                         <option value="31">31</option>
                         </select>
                          <!-- <label>Year</label>  -->
-                         <select name="year" class="year-select">
+                         <!-- <select name="year" class="year-select">
                             <option value="blnk"></option>
                             <option value="2019">2019</option>
                             <option value="2020">2020</option>
@@ -180,15 +171,25 @@
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
                             <option value="2024">2024</option>
-                        </select> 
-                </p> 
-</div>   
+                        </select>  --> 
+                <!-- </p>  -->
+                
 
 
-<p class="full">
-        <label>Event Location</label>
-        <input  type="text" name="first-name" id="event"> 
-    </p>
+
+  <div id="event-type">
+        <label>Event Type</label>
+        <select>
+          <option value="blnk"> </option>
+          <option value="Wedding">Wedding</option>
+          <option value="School Event">School Event</option>
+          <option value="Private Party">Private Party</option>
+          <option value="Corporate Event">Corporate Event</option>
+
+        </select>
+        <!-- <input  type="text" name="first-name" id="event">  -->
+      </div>
+    
 
 
 
@@ -197,23 +198,26 @@
                    <label>Message</label>
                    <textarea name="Message" rows="5" id="area"></textarea>
                    </p>
-                   <p class="full">                            
-                     <button>Submit</button>
+                   <p>                            
+                     <button class="
+                     send-btn">Send</button>
                    </p>
-   </form>
+   </form> 
          </div>
 
 
            <div class="company-info">
             
-            <h4> Master Sounds Entertainment</h4>
+            <!-- <h4> Master Sounds Entertainment</h4> -->
                    <ul>
-                       <li>248 Graison Lane</li>
+                       <li><i class="fas fa-map-marker-alt"></i>
+                        Dallas, GA
+                      </li>
                        <div>
                        <li><i class="fas fa-phone-volume">
                        </i>   727-992-3788</li>
 
-                       </div>
+                      </div>
                        <li><i class="fas fa-envelope-square"></i> mastersoundsinfo@gmail.com
                                
                        </li>
@@ -229,17 +233,12 @@
                                        <i class="fab fa-instagram fa-2x"></i>
                                </a>
                        </div>
-                       <section id="newsletter">
-                         <div class="footer-logo"> 
-                          <img src="logo-final.png">
-                         </div>
-                         </section> 
+                    
                          
 
 </div>
 
-<footer>
-            
+             
   
 
       
@@ -247,11 +246,13 @@
   </div>
   <div class="copyright">
 
-  COPYRIGHT © 2019 MASTER SOUNDS ENTERTAINMENT - ALL RIGHTS RESERVED.
-  </div>
+        
+    COPYRIGHT © 2020 MASTER SOUNDS ENTERTAINMENT | <br>A site by
+    
+    <a href="https://djmasterson.com/">David Masterson</a>
+    </div>
 
-</footer>
-
+ 
 <script src="app.js"></script>
 
    </body> 
