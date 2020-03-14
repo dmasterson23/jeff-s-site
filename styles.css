@@ -31,6 +31,7 @@
 cursor: pointer;
 margin-left: 30px;
 line-height: 100px;
+float: left;
 }
 
 .menu{
@@ -87,36 +88,50 @@ line-height: 100px;
 
 
 @media screen and (max-width:840px) {
+
+
+ 
+ 
   .show-menu-btn,.hide-menu-btn{
     display: block;
   }
 
- 
+  .cta-test {
+    padding: 9px 25px;
+   background: none;
+      /* transition: all 0.3s ease 8s; */
+  border: none;
+  cursor: pointer;
+  color:#b94a4b;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-decoration: underline;
+  text-align: left;
+  }   
   
   .mobile-btn {
     padding: 9px 25px;
     background:#b94a4b;
     margin-right: 3em;
     border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
 display: flex;
-color:   #d8d5d5;
-opacity: 0.5;
+color:   #ffffff;
+opacity: 0.7;
+font-size: 1em;
   }
 
-  .mobile-btn:hover {
-    color:   #d8d5d5;
-    background:#b94a4b;
+.mobile-btn:hover {
+ 
     opacity: 1;;
     }
-  .cta-top button{
+.cta-top button{
     display: none;
   }
-  .menu{
+ .menu{
     position: fixed;
-    width: 100%;
-    
+    width: 100%; 
     background: #636e72;
     right: -100%;
     top: 0;
@@ -127,11 +142,11 @@ opacity: 0.5;
     z-index: 102;
   }
 
-  .menu a{
+.menu a{
     display: block;
     padding: 20px;
   }
-  .hide-menu-btn{
+.hide-menu-btn{
     position: absolute;
     top: 40px;
     right: 40px;
@@ -142,8 +157,8 @@ opacity: 0.5;
   /* .bg-image{
     margin-top: 180px;
   } */
-}
 
+}
 
 
 *{
@@ -255,19 +270,23 @@ body{
 .cta {
   z-index: 2;
   position: absolute;
-  top:70%;
+  top:75%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
   list-style-type: none;
   display: block;
   background:#b94a4b;
-  padding: .75em .75em;
+  padding: 9px 25px;
   border-radius: 10px;
+  font-size: 1em;
+  max-width: 60%;
+  margin: 0 auto;
+
   color: white;
     text-transform: uppercase;
     opacity: .5;
-    margin-top: 1em;
+     /* margin-top: 1em; */
 
 }
 
@@ -383,11 +402,10 @@ body{
 
 .offering-content{
   padding-top: 1em;
-  font-size: 4em;
+  font-size: 2.5em;
    font-family: 'Architects Daughter', cursive; 
    text-align: center;
-   padding-bottom: 1em;
-}
+ }
 
 
  
@@ -413,7 +431,7 @@ body{
 }
  
 .home-heading {
-  font-size: 2.4em;
+  font-size: 2.5em;
   font-family: 'Architects Daughter', cursive;
   color:#000000;
   text-align: center;
@@ -498,15 +516,7 @@ body{
 
 
 }
-
-.testimonials{
-  margin: 0 auto;
-  width: 50%;
-  padding: 0;
-  padding-bottom: .5em;
-
-
-}
+ 
 .testimonials-cont h3{
   text-align: center;
   padding-bottom: .5em;
@@ -518,34 +528,28 @@ body{
 
 .testimonial-text{
   margin: 0 auto;
-  text-align: center;
-  margin-top: .5em;
-  border: 1px black solid;
- 
-  /* padding: 1em 1em; */
+  max-width: 80%;
+  /* text-align: center; */
+  /* margin-top: .5em; */
+   padding: 1em 1em; 
   letter-spacing: 1px; 
-  background-color: rgb(208, 209, 209);
- }
+  }
 
 
 .testimonial-text p{
    margin: 1em;
-  font-size: 1.1em;}
+  font-size: 1em;}
 
-  .cta-test {
-    padding: 9px 25px;
-   background: none;
-      /* transition: all 0.3s ease 8s; */
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
+  .cta-test   {
+   border: none;
+   cursor: pointer;
   color:#b94a4b;
-  text-transform: uppercase;
-  font-size: 1em;
-  text-decoration: underline;
-  margin: 0 auto;
-  padding-top: 2em;
-  
+   font-size: 1em;
+  text-decoration: none;
+     margin: 0 auto;
+ 
+   
+
    
   
   
@@ -668,14 +672,13 @@ margin: 0 auto;
 
     /* transition: all 0.3s ease 8s; */
 border: none;
-border-radius: 12px;
+border-radius: 10px;
 cursor: pointer;
 color: #ffffff;
 text-transform: uppercase;
 font-size: 1em;
-opacity: 0.5;
-margin-top: .5em;
-  }
+opacity: 0.7;  
+}
 
   .send-btn:hover{
     opacity: 1;
@@ -686,7 +689,7 @@ margin-top: .5em;
   /* box-sizing: border-box; */
    margin: 0 auto;
    /* padding: 1em 1em; */
-   width: 90%;
+   width: 100%;
    padding-bottom: 2em;
  
 
@@ -709,10 +712,9 @@ margin-top: .5em;
 
  
  #hire-me p{
-  font-size: 1.2em;
-  max-width:70%;
-  text-align: left;
-} 
+  font-size: 1em;
+  width:80%; 
+ } 
  
 .form-container{
   margin: 0 auto;
@@ -737,7 +739,6 @@ input, textarea{
    letter-spacing: 1.4px;
     width: 70%;
   margin: 0 auto;
-  margin-bottom: 2em;
   box-shadow: inset 0 4px 6px rgba(0,0,0,0.1);
 
  }
@@ -754,15 +755,18 @@ margin-bottom: 0.5em;
  padding-left: 1em; 
 }
 
-
+#area{
+  margin-bottom: 1em;
+}
 
 /* .contact  */
 
 .contact-info p{
    font-size: 1.4em;
-  text-align:center ;
- 
- padding: 1em; margin: 0 auto;
+  /* text-align:left; */
+ width: 80%;
+ padding: 1em; 
+ margin: 0 auto;
 
   /* box-shadow: 0 0 20px 0 rgba(173, 10, 24, 0.7);  */
 
@@ -883,26 +887,49 @@ margin-bottom: 0.5em;
    display: block;
    padding: 3em;
    width: 100%;
-
  }
 
-.testimonial {
+ .testimonials-heading h3{
+  font-size:2.5em;
+     padding-bottom: 1em;
+
+  font-family: 'Architects Daughter', cursive;
+  }
+
+ .testimonials-heading p{
+   font-weight: 400;
+   font-size: 1em;
+   line-height: 30px;
+   text-align: center;
+  
+ 
+ }
+ .testimonials-heading {
+  /* display: block; */
+   font-size: 1em;
+  margin: 0 auto;
+  text-align: center;
+   padding-top: 1em;
+
+}
+
+.testimonials {
+  
   /* position: absolute; */
-   padding: 4em;
-   display: block;
-   width: 80%;
+    width: 100%;
    margin: 0 auto;
    z-index: 1000;
-   position: absolute;
-}
+   position: relative;
+  }
 
 .testimonial-shape
 
 {        
 
    width: 80%;
-   height: 320px;
-   /* line-height: 22px; */
+height: 100%;
+padding-left: 1em;
+    /* line-height: 22px; */
   /* letter-spacing: 1px; */
  
   /* background-color: rgba(140, 144, 146, 0.7); */
@@ -917,10 +944,10 @@ margin-bottom: 0.5em;
   color: #000000;
   font-size: 1em;
   position: relative;
-  width: 90%;  margin: 0 auto;
+  width: 95%;  margin: 0 auto;
   padding: 1em;
-  height: auto;
-
+  text-align: left;
+ 
  }
 .fa-quote-left{
   padding-right: .4em;
@@ -944,7 +971,7 @@ padding-left: 0.4em;
 }
 
 .testimonial-name{
-  padding-top: 1em;
+  /* padding-top: 0.5em; */
   text-align: center;
   font-size: .8em;
 }
@@ -955,13 +982,25 @@ height: 400px;
   /* width: 90%; */ 
 
 
-  
+  .gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:#b94a4b ;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }
  
 
 
 /* Footer */
 
-.footer-nav li{
+.footer-nav a{
   border-bottom: #b2b2b2 1px solid;
   align-content:left;
   text-align: left;
@@ -969,8 +1008,14 @@ height: 400px;
    margin: 0;
   padding: 0;
   line-height: 3em;
+  display: grid;
+  text-decoration: none;
   /* padding-top: 1em; */
+  color: #b2b2b2; 
+}
 
+.footer-nav a:hover{
+  color: #b94a4b;
 }
 
  
@@ -1064,15 +1109,16 @@ footer{
 .btn-footer{
   padding: 9px 25px;
   background:#b94a4b;
-  margin-top: 0.5em;
+  /* margin-top: 0.5em; */
 opacity: 0.7;
     /* transition: all 0.3s ease 8s; */
 border: none;
-border-radius: 12px;
+border-radius: 10px;
 cursor: pointer;
 color: #ffffff;
 text-transform: uppercase;
 font-size: 1em;
+letter-spacing: 1px;
 }
 
 .btn-footer:hover{
@@ -1197,15 +1243,8 @@ float: right;
  
 
 
-
-.contact-info, .contact-heading  {
-  text-align: left;
+ 
 }
-
- /* #icons-heading{
-   padding: 2em 0 2em 0;
-    align-content: center;  */
- }
    
 
 .home-heading {
@@ -1402,8 +1441,12 @@ float: right;
       .footer-heading {
         font-size: 1.8em;
       }
+#hire-me{
+  max-width:65%;
+  margin: 0 auto;
+ } 
 
-       .wrapper{
+       .wrapper {
         max-width: 80%;
        } 
 
@@ -1473,11 +1516,7 @@ float: right;
       .home-testimonial, .contact-info p{
         font-size: 1.9em;
       }
-    /* .wrapper{
-      padding: 3em;
-    } */
-    /* .home-container, .footer-container{ */
-      /* padding: 2em 2em 2em 2em;} */
+   
     
     
       .services-content{
@@ -1503,12 +1542,8 @@ float: right;
         
   
         }
-     /* */
+   
 
-     #hire-me p{
-      font-size: 1.3em;
-      max-width:55%;
-    } 
      
 
  @media screen and (max-width:980px)
