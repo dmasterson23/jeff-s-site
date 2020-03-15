@@ -740,6 +740,7 @@ input, textarea{
     width: 70%;
   margin: 0 auto;
   box-shadow: inset 0 4px 6px rgba(0,0,0,0.1);
+  color: #000000;
 
  }
 
@@ -1096,13 +1097,25 @@ footer{
 .bottom-form label {
   width: 80%;
   display: flex;
-  color: #b2b2b2;
+  color: #f5f3f3;
   font-size: 18px;
+  padding-bottom: .5em;
+
 }
+
+/* .bottom-form input{
+  padding-bottom: .5em;
+
+} */
 #footer-name, #footer-email, #footer-info {
-  background-color: rgb(71, 69, 69);
+  background-color: rgb(168, 167, 167);
   border: 0;
-  color: #b2b2b2;
+  color: #111111;
+  font-size: 18px;
+  font-family: 'Montserrat',  sans-serif;
+  letter-spacing: 1.4px;
+  margin: 0 auto;
+
 }
 
 
